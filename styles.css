@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: #1F2632;
+    width: 100%;
+    max-width: 1440px;
+    /* height: 100vh; */
+    scroll-behavior: smooth;
+    /* border: 3px solid red; */
+    background-color: linear-gradient(340deg,
+            rgb(43, 7, 110),
+            rgb(250, 239, 82));
+}
+
+
+
+
+#random-quotes {
+    color: #1F2632;
+    border-radius: 2em;
+    font-family: 'Graduate', cursive;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 30em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 8em auto;
+    /* padding: 15px 7px; */
+    border-radius: 2em;
+    background-color: blueviolet;
+    padding: 2em 2em;
+}
+
+.quote-container {
+    border-bottom: 1px solid #1F2632;
+    padding-bottom: 15px;
+    width: 100%;
+    max-width: 25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.quote-container p {
+    /* font-style: italic; */
+    font-family: 'Albert Sans', sans-serif;
+    line-height: 1.5em;
+    font-size: x-large;
+    margin-top: 1em;
+}
+
+#button {
+    padding: 8px 25px;
+    margin-top: 20px;
+    border-radius: 0.5em;
+    /* border-style: outset; */
+    /* border-color: black; */
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 100%;
+    text-transform: capitalize;
+}
+
+#button:active {
+    padding: 10px 27px;
+}
+
+
+@media screen and (max-width: calc(590px + 16px)){
+    .main-container{
+        width: 100%;
+        max-width: 25em;
+        margin: 8em auto;
+
+    }
+
+    .quote-container{
+        width: 100%;
+        max-width: 20em;
+    }
+}
+
+@media screen and (max-width: calc(450px + 16px)){
+    .main-container{
+        background-color: azure;
+        width: 100%;
+        max-width: 20em;
+    }
+
+    .quote-container{
+        width: 100%;
+        max-width: 16em;
+    }
+}
+
+@media screen and (max-width: calc(338px + 16px)){
+    .main-container{
+        background-color: azure;
+        width: 100%;
+        max-width: 15em;
+    }
+
+    .quote-container{
+        width: 100%;
+        max-width: 10em;
+    }
+}
